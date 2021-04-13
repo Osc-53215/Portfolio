@@ -1,6 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
 body {
-  background-image: -webkit-gradient(linear, left top, right top, from(#313132), to(#161618));
   background-image: linear-gradient(to right, #313132, #161618);
   margin: 0;
   font-family: 'Poppins';
@@ -50,6 +49,15 @@ section {
   text-align: center;
 }
 
+.hero img{
+  width: 10em;
+  height: 10em;
+  border: 5px solid #efc222;
+  border-radius: 50%;
+  display: block;
+  margin-right: auto;
+}
+
 .left-col {
   color: white;
 }
@@ -60,14 +68,13 @@ section {
   letter-spacing: .3em;
 }
 
+
 .portfolio {
-  background-image: -webkit-gradient(linear, left top, right top, from(white), to(#313132));
-  background-image: linear-gradient(to right, white, #313132);
   color: white;
 }
 
 .portfolio li {
-  background: grey;
+  background-image: linear-gradient(to right, #efc222, #161618);
   text-align: center;
   padding: 2em 1em;
   width: 80%;
@@ -78,7 +85,7 @@ section {
 .portfolio li img {
   width: 5em;
   height: 5em;
-  border: 5px solid grey;
+  border: 5px solid #efc222;
   border-radius: 50%;
   margin-top: -4.5em;
 }
@@ -100,7 +107,7 @@ input, textarea {
   border-radius: .3em;
   border: 1px solid gray;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 .send-message-cta {
@@ -118,10 +125,11 @@ input, textarea {
 }
 
 iframe {
-  width: 100%;
-  height: 300px;
+width: 100%;
 }
-
+.contact{
+  color: white;
+}
 nav.menu-btn {
   display: block;
 }
@@ -132,7 +140,7 @@ nav {
   width: 66%;
   right: 0;
   top: 0;
-  background: #20272e;
+  background: #efc222;
   height: 100vh;
   padding: 1em;
 }
@@ -173,14 +181,11 @@ nav li a:hover {
     display: none;
   }
   .navbar .container {
-    display: -ms-grid;
     display: grid;
     -ms-grid-columns: 180px auto;
         grid-template-columns: 180px auto;
   }
   .navbar nav {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
@@ -192,12 +197,10 @@ nav li a:hover {
     padding: 0;
   }
   .navbar nav ul {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
   }
   .navbar nav a {
-    color: #87806E;
+    color: white;
     font-size: 1em;
     padding: .1em 1em;
   }
@@ -229,12 +232,10 @@ nav li a:hover {
     padding: 10em 4em;
   }
   .hero .container {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
     text-align: left;
   }
   .hero .container .left-col {
@@ -245,8 +246,6 @@ nav li a:hover {
     width: 90%;
   }
   .portfolio ul {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
   }
   .portfolio ul li {
@@ -256,16 +255,14 @@ nav li a:hover {
     position: relative;
   }
   .contact .container {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
   }
   .contact-right {
-    position: absolute;
-    right: 0;
-    top: 0;
-    width: 45%;
-    height: 100%;
+      position: absolute;
+      right: 4.5em;
+      top: 11.5em;
+      width: 45%;
+      height: 45%;
   }
   .contact-right iframe {
     height: 100%;
@@ -274,4 +271,3 @@ nav li a:hover {
     text-align: left;
   }
 }
-/*# sourceMappingURL=main.css.map */

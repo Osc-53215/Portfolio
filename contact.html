@@ -57,8 +57,29 @@
         <div class = "git-link-you">
             <a href="https://github.com/Osc-53215"><img id = "github" class = "github" src="images/Icon awesome-github.png" alt="GitHub"></a>
             <a href="https://www.linkedin.com/"><img id = "linkedin" class = "linkedin" src="images/Icon awesome-linkedin.png" alt="LinkedIn"></a>
-            <a href="https://www.youtube.com/"><img id = "youtube" class = "youtube" src="images/Icon feather-youtube.png" alt="YouTube"></a>
+            <a href="https://www.youtube.com/channel/UCIE4--XGrsecwiz0wXp38_g"><img id = "youtube" class = "youtube" src="images/Icon feather-youtube.png" alt="YouTube"></a>
         </div>
 
+        <script>
+
+            //allows us to enter the menu bar
+            const mobileBtn = document.getElementById('mobile-cta');
+    
+            //allows a display block to see whats inside menu
+            const nav = document.querySelector('nav'); 
+    
+            //allows us to exit the diplay block
+            const mobileBtnExit = document.getElementById('mobile-exit');
+    
+            //shows whats inside
+            mobileBtn.addEventListener('click', () => {
+                nav.classList.add('menu-btn');
+            })
+    
+            //hides whats inside
+            mobileBtnExit.addEventListener('click', () => {
+                nav.classList.remove('menu-btn');
+            })
+        </script>
 </body>
 </html>
